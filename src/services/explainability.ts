@@ -2,6 +2,14 @@ import { Deal } from "../models/deal";
 import { Lender } from "../models/lender";
 import { ScoreBreakdown } from "./scoring";
 
+function formatLoanAmount(
+  amount: number
+): string {
+  return `$${(
+    amount / 1_000_000
+  ).toFixed(1)}M`;
+}
+
 export interface MatchExplanation {
   positiveSignals: string[];
   warnings: string[];
@@ -23,9 +31,14 @@ export function explainMatch(
     deal.loanAmount >= mandate.minLoanAmount &&
     deal.loanAmount <= revealed.effectiveMaxLoanAmount
   ) {
+    // positiveSignals.push(
+    //   `Loan size of $${deal.loanAmount}M fits the lender's effective range`
+    // );
     positiveSignals.push(
-      `Loan size of $${deal.loanAmount}M fits the lender's effective range`
-    );
+  `Loan size of ${formatLoanAmount(
+    deal.loanAmount
+  )} fits the lender's effective range`
+);
   }
 
   // Asset
