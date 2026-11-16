@@ -1,0 +1,633 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  color: #172033;
+  background: #f5f7fb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #f5f7fb;
+}
+
+button,
+select {
+  font: inherit;
+}
+
+/* =========================
+   APP
+========================= */
+
+#app {
+  min-height: 100vh;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  height: 76px;
+  padding: 0 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #ffffff;
+  border-bottom: 1px solid #e7eaf0;
+}
+
+.header h1 {
+  margin: 0;
+
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+.header p {
+  margin: 4px 0 0;
+
+  color: #7b8496;
+  font-size: 13px;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 7px 11px;
+
+  border: 1px solid #e3e7ee;
+  border-radius: 20px;
+
+  color: #596274;
+  background: #fafbfc;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+  background: #22a06b;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+
+  padding: 32px 0 50px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+  margin-bottom: 20px;
+  padding: 24px;
+
+  background: #ffffff;
+
+  border: 1px solid #e7eaf0;
+  border-radius: 12px;
+
+  box-shadow: 0 2px 8px rgba(20, 30, 50, 0.03);
+}
+
+.section-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  margin-bottom: 22px;
+}
+
+.section-header h2 {
+  margin: 0;
+
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+}
+
+.section-header p {
+  margin: 5px 0 0;
+
+  color: #7b8496;
+  font-size: 13px;
+}
+
+/* =========================
+   DEAL SELECTOR
+========================= */
+
+.deal-selector {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.deal-selector label {
+  display: block;
+  margin-bottom: 7px;
+
+  color: #596274;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.deal-selector select {
+  width: 100%;
+  max-width: 520px;
+
+  height: 42px;
+  padding: 0 13px;
+
+  border: 1px solid #dfe3ea;
+  border-radius: 8px;
+
+  background: #ffffff;
+  color: #172033;
+
+  outline: none;
+
+  cursor: pointer;
+}
+
+.deal-selector select:focus {
+  border-color: #7c8cff;
+  box-shadow: 0 0 0 3px rgba(124, 140, 255, 0.12);
+}
+
+#find-lenders-btn {
+  height: 42px;
+  padding: 0 18px;
+
+  border: 0;
+  border-radius: 8px;
+
+  background: #172033;
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.15s ease,
+    background 0.15s ease;
+}
+
+#find-lenders-btn:hover {
+  background: #27334a;
+}
+
+#find-lenders-btn:active {
+  transform: translateY(1px);
+}
+
+/* =========================
+   DEAL SUMMARY
+========================= */
+
+.deal-id {
+  padding: 5px 9px;
+
+  border-radius: 6px;
+
+  background: #f1f3f7;
+  color: #596274;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.deal-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(6, 1fr);
+
+  gap: 12px;
+}
+
+.metric {
+  padding: 16px;
+
+  border: 1px solid #e9ecf1;
+  border-radius: 9px;
+
+  background: #fafbfc;
+}
+
+.metric-label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #8a92a1;
+
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.metric strong {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* =========================
+   RESULT COUNT
+========================= */
+
+.result-count {
+  padding: 6px 10px;
+
+  border-radius: 6px;
+
+  background: #f1f3f7;
+
+  color: #596274;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* =========================
+   LENDER CARD
+========================= */
+
+.lender-card {
+  margin-bottom: 12px;
+
+  border: 1px solid #e5e8ee;
+  border-radius: 10px;
+
+  overflow: hidden;
+
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.lender-card:hover {
+  border-color: #d4d9e3;
+
+  box-shadow: 0 4px 14px rgba(20, 30, 50, 0.05);
+}
+
+.lender-card:last-child {
+  margin-bottom: 0;
+}
+
+.lender-header {
+  display: flex;
+  align-items: center;
+
+  padding: 17px 18px;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #eef0f4;
+}
+
+.rank {
+  width: 38px;
+
+  color: #8a92a1;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.lender-info {
+  flex: 1;
+}
+
+.lender-info h3 {
+  margin: 0;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.lender-info span {
+  display: block;
+
+  margin-top: 4px;
+
+  color: #8a92a1;
+
+  font-size: 11px;
+}
+
+.score {
+  text-align: right;
+}
+
+.score span {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: #8a92a1;
+
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.score strong {
+  font-size: 17px;
+}
+
+/* =========================
+   MATCH CONTENT
+========================= */
+
+.match-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+
+  padding: 18px;
+}
+
+.signals {
+  flex: 1;
+}
+
+.signals h4 {
+  margin: 0 0 10px;
+
+  color: #596274;
+
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.signal {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+
+  margin-bottom: 7px;
+
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.signal span {
+  width: 15px;
+
+  font-weight: 700;
+}
+
+.signal.positive {
+  color: #4e596b;
+}
+
+.signal.positive span {
+  color: #22a06b;
+}
+
+.signal.warning {
+  color: #6b624f;
+}
+
+.signal.warning span {
+  color: #d89a22;
+}
+
+/* =========================
+   RESPONSE
+========================= */
+
+.response {
+  min-width: 145px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.response-label {
+  margin-bottom: 7px;
+
+  color: #8a92a1;
+
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.response-badge {
+  padding: 6px 10px;
+
+  border-radius: 6px;
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+}
+
+.response-badge.quote {
+  background: #eaf8f1;
+  color: #16734a;
+}
+
+.response-badge.pass {
+  background: #fceeee;
+  color: #b64040;
+}
+
+.pass-reason {
+  margin-top: 6px;
+
+  color: #a56a6a;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+/* =========================
+   METRICS
+========================= */
+
+.metrics-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 14px;
+}
+
+.metric-card {
+  padding: 20px;
+
+  border: 1px solid #e7eaf0;
+  border-radius: 9px;
+
+  background: #fafbfc;
+}
+
+.metric-card span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #596274;
+
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.metric-card strong {
+  display: block;
+
+  font-size: 25px;
+  font-weight: 750;
+  letter-spacing: -0.5px;
+}
+
+.metric-card small {
+  display: block;
+
+  margin-top: 5px;
+
+  color: #8a92a1;
+
+  font-size: 11px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  padding: 0 0 35px;
+
+  text-align: center;
+
+  color: #9aa1ae;
+
+  font-size: 11px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .deal-grid {
+    grid-template-columns:
+      repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    padding: 0 20px;
+  }
+
+  .container {
+    width: min(100% - 24px, 1120px);
+    padding-top: 20px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .deal-selector {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .deal-selector select {
+    max-width: none;
+  }
+
+  #find-lenders-btn {
+    width: 100%;
+  }
+
+  .deal-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .match-content {
+    flex-direction: column;
+  }
+
+  .response {
+    align-items: flex-start;
+  }
+
+  .metrics-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  .header {
+    height: auto;
+    padding: 18px;
+
+    align-items: flex-start;
+  }
+
+  .status {
+    display: none;
+  }
+
+  .deal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lender-header {
+    align-items: flex-start;
+  }
+
+  .score {
+    margin-left: 10px;
+  }
+}

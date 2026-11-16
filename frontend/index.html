@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Forward Matching Prototype</title>
+
+    <meta
+      name="description"
+      content="Private credit deal-to-lender matching prototype"
+    />
+  </head>
+
+  <body>
+    <div id="app">
+      <!-- Header -->
+      <header class="header">
+        <div>
+          <h1>Forward Matching</h1>
+          <p>Private Credit Deal Routing Prototype</p>
+        </div>
+
+        <div class="status">
+          <span class="status-dot"></span>
+          Prototype
+        </div>
+      </header>
+
+      <main class="container">
+
+        <!-- Deal Selection -->
+        <section class="card">
+          <div class="section-header">
+            <div>
+              <h2>Select a Deal</h2>
+              <p>
+                Choose a synthetic deal to find the most suitable lenders.
+              </p>
+            </div>
+          </div>
+
+          <div class="deal-selector">
+            <label for="deal-select">Deal</label>
+
+            <select id="deal-select">
+              <option value="D001">
+                D001 — Multifamily · CA · $7M
+              </option>
+
+              <option value="D002">
+                D002 — Office · TX · $12M
+              </option>
+
+              <option value="D004">
+                D004 — Retail · FL · $9M
+              </option>
+
+              <option value="D006">
+                D006 — Office · CA · $22M
+              </option>
+
+              <option value="D011">
+                D011 — Office · AZ · $6M
+              </option>
+
+              <option value="D012">
+                D012 — Retail · CA · $17M
+              </option>
+            </select>
+
+            <button id="find-lenders-btn">
+              Find Lenders
+            </button>
+          </div>
+        </section>
+
+
+        <!-- Deal Summary -->
+        <section class="card">
+          <div class="section-header">
+            <div>
+              <h2>Deal Summary</h2>
+              <p>Current deal information</p>
+            </div>
+
+            <span class="deal-id" id="deal-id">
+              D002
+            </span>
+          </div>
+
+          <div class="deal-grid">
+
+            <div class="metric">
+              <span class="metric-label">Asset</span>
+              <strong id="asset-type">OFFICE</strong>
+            </div>
+
+            <div class="metric">
+              <span class="metric-label">Geography</span>
+              <strong id="geography">TX</strong>
+            </div>
+
+            <div class="metric">
+              <span class="metric-label">Loan Amount</span>
+              <strong id="loan-amount">$12.0M</strong>
+            </div>
+
+            <div class="metric">
+              <span class="metric-label">LTV</span>
+              <strong id="ltv">66%</strong>
+            </div>
+
+            <div class="metric">
+              <span class="metric-label">DSCR</span>
+              <strong id="dscr">1.28x</strong>
+            </div>
+
+            <div class="metric">
+              <span class="metric-label">Recourse</span>
+              <strong id="recourse">PARTIAL</strong>
+            </div>
+
+          </div>
+        </section>
+
+
+        <!-- Matching Results -->
+        <section class="card">
+
+          <div class="section-header">
+            <div>
+              <h2>Top Lender Matches</h2>
+              <p>
+                Ranked based on deal fit, mandate freshness and lender behavior.
+              </p>
+            </div>
+
+            <span class="result-count">
+              Top 5
+            </span>
+          </div>
+
+
+          <div id="matches-container">
+
+            <!-- Match 1 -->
+            <article class="lender-card">
+
+              <div class="lender-header">
+
+                <div class="rank">
+                  #1
+                </div>
+
+                <div class="lender-info">
+                  <h3>Ironwood Capital</h3>
+                  <span>Commercial Real Estate Credit</span>
+                </div>
+
+                <div class="score">
+                  <span>Score</span>
+                  <strong>86.4</strong>
+                </div>
+
+              </div>
+
+
+              <div class="match-content">
+
+                <div class="signals">
+
+                  <h4>Why matched</h4>
+
+                  <div class="signal positive">
+                    <span>✓</span>
+                    Office is supported
+                  </div>
+
+                  <div class="signal positive">
+                    <span>✓</span>
+                    Texas is a supported geography
+                  </div>
+
+                  <div class="signal positive">
+                    <span>✓</span>
+                    $12M loan fits effective range
+                  </div>
+
+                  <div class="signal positive">
+                    <span>✓</span>
+                    Strong LTV headroom
+                  </div>
+
+                  <div class="signal positive">
+                    <span>✓</span>
+                    Strong historical response rate
+                  </div>
+
+                </div>
+
+
+                <div class="response">
+
+                  <span class="response-label">
+                    Simulated Response
+                  </span>
+
+                  <span class="response-badge quote">
+                    QUOTE
+                  </span>
+
+                </div>
+
+              </div>
+
+            </article>
+
+
+            <!-- Match 2 -->
+            <article class="lender-card">
+
+              <div class="lender-header">
+
+                <div class="rank">
+                  #2
+                </div>
+
+                <div class="lender-info">
+                  <h3>Canyon Commercial Credit</h3>
+                  <span>Commercial Real Estate Credit</span>
+                </div>
+
+                <div class="score">
+                  <span>Score</span>
+                  <strong>79.8</strong>
+                </div>
+
+              </div>
+
+
+              <div class="match-content">
+
+                <div class="signals">
+
+                  <h4>Why matched</h4>
+
+                  <div class="signal positive">
+                    <span>✓</span>
+                    Office is supported
+                  </div>
+
+                  <div class="signal positive">
+                    <span>✓</span>
+                    Texas is a supported geography
+                  </div>
+
+                  <div class="signal positive">
+                    <span>✓</span>
+                    Loan size fits
+                  </div>
+
+                  <div class="signal warning">
+                    <span>⚠</span>
+                    LTV is close to effective maximum
+                  </div>
+
+                </div>
+
+
+                <div class="response">
+
+                  <span class="response-label">
+                    Simulated Response
+                  </span>
+
+                  <span class="response-badge pass">
+                    PASS
+                  </span>
+
+                  <span class="pass-reason">
+                    LTV_TOO_HIGH
+                  </span>
+
+                </div>
+
+              </div>
+
+            </article>
+
+
+            <!-- Match 3 -->
+            <article class="lender-card">
+
+              <div class="lender-header">
+
+                <div class="rank">
+                  #3
+                </div>
+
+                <div class="lender-info">
+                  <h3>HarborView Capital</h3>
+                  <span>Commercial Real Estate Credit</span>
+                </div>
+
+                <div class="score">
+                  <span>Score</span>
+                  <strong>77.3</strong>
+                </div>
+
+              </div>
+
+
+              <div class="match-content">
+
+                <div class="signals">
+
+                  <h4>Why matched</h4>
+
+                  <div class="signal positive">
+                    <span>✓</span>
+                    Office is supported
+                  </div>
+
+                  <div class="signal positive">
+                    <span>✓</span>
+                    Texas is supported
+                  </div>
+
+                  <div class="signal positive">
+                    <span>✓</span>
+                    Loan size fits
+                  </div>
+
+                  <div class="signal positive">
+                    <span>✓</span>
+                    LTV within effective range
+                  </div>
+
+                </div>
+
+
+                <div class="response">
+
+                  <span class="response-label">
+                    Simulated Response
+                  </span>
+
+                  <span class="response-badge quote">
+                    QUOTE
+                  </span>
+
+                </div>
+
+              </div>
+
+            </article>
+
+
+            <!-- Match 4 -->
+            <article class="lender-card">
+
+              <div class="lender-header">
+
+                <div class="rank">
+                  #4
+                </div>
+
+                <div class="lender-info">
+                  <h3>Redwood Credit</h3>
+                  <span>Commercial Real Estate Credit</span>
+                </div>
+
+                <div class="score">
+                  <span>Score</span>
+                  <strong>74.9</strong>
+                </div>
+
+              </div>
+
+
+              <div class="match-content">
+
+                <div class="signals">
+
+                  <h4>Why matched</h4>
+
+                  <div class="signal positive">
+                    <span>✓</span>
+                    Office is supported
+                  </div>
+
+                  <div class="signal positive">
+                    <span>✓</span>
+                    Texas is supported
+                  </div>
+
+                  <div class="signal positive">
+                    <span>✓</span>
+                    DSCR requirement satisfied
+                  </div>
+
+                </div>
+
+
+                <div class="response">
+
+                  <span class="response-label">
+                    Simulated Response
+                  </span>
+
+                  <span class="response-badge quote">
+                    QUOTE
+                  </span>
+
+                </div>
+
+              </div>
+
+            </article>
+
+
+            <!-- Match 5 -->
+            <article class="lender-card">
+
+              <div class="lender-header">
+
+                <div class="rank">
+                  #5
+                </div>
+
+                <div class="lender-info">
+                  <h3>Pacific Capital</h3>
+                  <span>Commercial Real Estate Credit</span>
+                </div>
+
+                <div class="score">
+                  <span>Score</span>
+                  <strong>71.2</strong>
+                </div>
+
+              </div>
+
+
+              <div class="match-content">
+
+                <div class="signals">
+
+                  <h4>Why matched</h4>
+
+                  <div class="signal positive">
+                    <span>✓</span>
+                    Loan size fits
+                  </div>
+
+                  <div class="signal positive">
+                    <span>✓</span>
+                    Office is supported
+                  </div>
+
+                  <div class="signal positive">
+                    <span>✓</span>
+                    Texas is supported
+                  </div>
+
+                  <div class="signal warning">
+                    <span>⚠</span>
+                    LTV close to effective maximum
+                  </div>
+
+                </div>
+
+
+                <div class="response">
+
+                  <span class="response-label">
+                    Simulated Response
+                  </span>
+
+                  <span class="response-badge pass">
+                    PASS
+                  </span>
+
+                  <span class="pass-reason">
+                    LTV_TOO_HIGH
+                  </span>
+
+                </div>
+
+              </div>
+
+            </article>
+
+          </div>
+
+        </section>
+
+
+        <!-- Metrics -->
+        <section class="card">
+
+          <div class="section-header">
+            <div>
+              <h2>Matching Metrics</h2>
+              <p>Performance of the current recommendation set</p>
+            </div>
+          </div>
+
+
+          <div class="metrics-grid">
+
+            <div class="metric-card">
+              <span>Precision@5</span>
+              <strong id="precision">60%</strong>
+              <small>Interested lenders / Top 5</small>
+            </div>
+
+            <div class="metric-card">
+              <span>Hit Rate</span>
+              <strong id="hit-rate">100%</strong>
+              <small>Deals with ≥1 quote</small>
+            </div>
+
+            <div class="metric-card">
+              <span>Pass Rate</span>
+              <strong id="pass-rate">40%</strong>
+              <small>Top 5 lender responses</small>
+            </div>
+
+          </div>
+
+        </section>
+
+      </main>
+
+
+      <footer>
+        Forward Matching Prototype · Synthetic Data
+      </footer>
+
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

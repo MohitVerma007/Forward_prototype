@@ -1,0 +1,314 @@
+[
+  {
+    "id": "L001",
+    "name": "Pacific Capital",
+    "fundType": "Private Credit Fund",
+    "statedMandate": {
+      "minLoanAmount": 5000000,
+      "maxLoanAmount": 30000000,
+      "assetTypes": ["MULTIFAMILY", "INDUSTRIAL", "OFFICE"],
+      "geographies": ["CA", "AZ", "TX"],
+      "maxLtv": 70,
+      "minDscr": 1.25,
+      "acceptedRecourse": ["FULL", "PARTIAL", "NON_RECOURSE"]
+    },
+    "revealedMandate": {
+      "effectiveMaxLtv": 64,
+      "effectiveMaxLoanAmount": 25000000
+    },
+    "behavior": {
+      "responseRate": 0.78,
+      "lastUpdated": "2026-11-10"
+    },
+    "hiddenPreference": {
+      "trueMaxLtv": 64,
+      "trueMaxLoanAmount": 25000000
+    }
+  },
+  {
+    "id": "L002",
+    "name": "West Coast Credit",
+    "fundType": "Private Credit Fund",
+    "statedMandate": {
+      "minLoanAmount": 5000000,
+      "maxLoanAmount": 50000000,
+      "assetTypes": ["MULTIFAMILY", "INDUSTRIAL", "OFFICE", "RETAIL"],
+      "geographies": ["CA", "AZ", "TX", "FL"],
+      "maxLtv": 75,
+      "minDscr": 1.3,
+      "acceptedRecourse": ["FULL", "PARTIAL", "NON_RECOURSE"]
+    },
+    "revealedMandate": {
+      "effectiveMaxLtv": 68,
+      "effectiveMaxLoanAmount": 40000000
+    },
+    "behavior": {
+      "responseRate": 0.82,
+      "lastUpdated": "2026-11-11"
+    },
+    "hiddenPreference": {
+      "trueMaxLtv": 68,
+      "trueMaxLoanAmount": 40000000
+    }
+  },
+  {
+    "id": "L003",
+    "name": "BlueRock Lending",
+    "fundType": "Regional Credit Fund",
+    "statedMandate": {
+      "minLoanAmount": 3000000,
+      "maxLoanAmount": 15000000,
+      "assetTypes": ["OFFICE", "RETAIL", "MULTIFAMILY"],
+      "geographies": ["TX", "FL", "AZ"],
+      "maxLtv": 65,
+      "minDscr": 1.3,
+      "acceptedRecourse": ["FULL", "PARTIAL"]
+    },
+    "revealedMandate": {
+      "effectiveMaxLtv": 62,
+      "effectiveMaxLoanAmount": 12000000
+    },
+    "behavior": {
+      "responseRate": 0.68,
+      "lastUpdated": "2026-11-09"
+    },
+    "hiddenPreference": {
+      "trueMaxLtv": 62,
+      "trueMaxLoanAmount": 12000000
+    }
+  },
+  {
+    "id": "L004",
+    "name": "Horizon Real Estate Credit",
+    "fundType": "Real Estate Credit Fund",
+    "statedMandate": {
+      "minLoanAmount": 8000000,
+      "maxLoanAmount": 25000000,
+      "assetTypes": ["MULTIFAMILY", "OFFICE", "RETAIL"],
+      "geographies": ["CA", "TX", "FL"],
+      "maxLtv": 68,
+      "minDscr": 1.2,
+      "acceptedRecourse": ["PARTIAL", "NON_RECOURSE"]
+    },
+    "revealedMandate": {
+      "effectiveMaxLtv": 65,
+      "effectiveMaxLoanAmount": 22000000
+    },
+    "behavior": {
+      "responseRate": 0.71,
+      "lastUpdated": "2026-11-10"
+    },
+    "hiddenPreference": {
+      "trueMaxLtv": 65,
+      "trueMaxLoanAmount": 22000000
+    }
+  },
+  {
+    "id": "L005",
+    "name": "Atlas Property Finance",
+    "fundType": "Real Estate Debt Fund",
+    "statedMandate": {
+      "minLoanAmount": 2000000,
+      "maxLoanAmount": 10000000,
+      "assetTypes": ["RETAIL", "OFFICE", "INDUSTRIAL", "MULTIFAMILY"],
+      "geographies": ["FL", "AZ", "TX"],
+      "maxLtv": 65,
+      "minDscr": 1.2,
+      "acceptedRecourse": ["FULL", "PARTIAL", "NON_RECOURSE"]
+    },
+    "revealedMandate": {
+      "effectiveMaxLtv": 58,
+      "effectiveMaxLoanAmount": 9000000
+    },
+    "behavior": {
+      "responseRate": 0.65,
+      "lastUpdated": "2026-11-08"
+    },
+    "hiddenPreference": {
+      "trueMaxLtv": 58,
+      "trueMaxLoanAmount": 9000000
+    }
+  },
+  {
+    "id": "L006",
+    "name": "Summit Capital Partners",
+    "fundType": "Private Credit Fund",
+    "statedMandate": {
+      "minLoanAmount": 5000000,
+      "maxLoanAmount": 30000000,
+      "assetTypes": ["MULTIFAMILY", "OFFICE", "RETAIL"],
+      "geographies": ["CA", "FL", "AZ"],
+      "maxLtv": 70,
+      "minDscr": 1.25,
+      "acceptedRecourse": ["FULL", "PARTIAL", "NON_RECOURSE"]
+    },
+    "revealedMandate": {
+      "effectiveMaxLtv": 67,
+      "effectiveMaxLoanAmount": 28000000
+    },
+    "behavior": {
+      "responseRate": 0.74,
+      "lastUpdated": "2026-11-07"
+    },
+    "hiddenPreference": {
+      "trueMaxLtv": 67,
+      "trueMaxLoanAmount": 28000000
+    }
+  },
+  {
+    "id": "L007",
+    "name": "Redwood Credit",
+    "fundType": "Real Estate Credit Fund",
+    "statedMandate": {
+      "minLoanAmount": 4000000,
+      "maxLoanAmount": 20000000,
+      "assetTypes": ["MULTIFAMILY", "INDUSTRIAL", "OFFICE"],
+      "geographies": ["CA", "AZ", "TX"],
+      "maxLtv": 72,
+      "minDscr": 1.25,
+      "acceptedRecourse": ["PARTIAL", "NON_RECOURSE"]
+    },
+    "revealedMandate": {
+      "effectiveMaxLtv": 66,
+      "effectiveMaxLoanAmount": 18000000
+    },
+    "behavior": {
+      "responseRate": 0.69,
+      "lastUpdated": "2026-11-06"
+    },
+    "hiddenPreference": {
+      "trueMaxLtv": 66,
+      "trueMaxLoanAmount": 18000000
+    }
+  },
+  {
+    "id": "L008",
+    "name": "Canyon Commercial Credit",
+    "fundType": "Commercial Credit Fund",
+    "statedMandate": {
+      "minLoanAmount": 5000000,
+      "maxLoanAmount": 25000000,
+      "assetTypes": ["OFFICE", "INDUSTRIAL", "RETAIL"],
+      "geographies": ["TX", "AZ", "FL"],
+      "maxLtv": 70,
+      "minDscr": 1.25,
+      "acceptedRecourse": ["FULL", "PARTIAL", "NON_RECOURSE"]
+    },
+    "revealedMandate": {
+      "effectiveMaxLtv": 64,
+      "effectiveMaxLoanAmount": 20000000
+    },
+    "behavior": {
+      "responseRate": 0.72,
+      "lastUpdated": "2026-11-09"
+    },
+    "hiddenPreference": {
+      "trueMaxLtv": 64,
+      "trueMaxLoanAmount": 20000000
+    }
+  },
+  {
+    "id": "L009",
+    "name": "Evergreen Real Estate Finance",
+    "fundType": "Private Debt Fund",
+    "statedMandate": {
+      "minLoanAmount": 3000000,
+      "maxLoanAmount": 20000000,
+      "assetTypes": ["MULTIFAMILY", "RETAIL", "OFFICE"],
+      "geographies": ["CA", "FL", "TX"],
+      "maxLtv": 68,
+      "minDscr": 1.2,
+      "acceptedRecourse": ["FULL", "PARTIAL", "NON_RECOURSE"]
+    },
+    "revealedMandate": {
+      "effectiveMaxLtv": 63,
+      "effectiveMaxLoanAmount": 17000000
+    },
+    "behavior": {
+      "responseRate": 0.76,
+      "lastUpdated": "2026-11-10"
+    },
+    "hiddenPreference": {
+      "trueMaxLtv": 63,
+      "trueMaxLoanAmount": 17000000
+    }
+  },
+  {
+    "id": "L010",
+    "name": "Ironwood Capital",
+    "fundType": "Private Credit Fund",
+    "statedMandate": {
+      "minLoanAmount": 4000000,
+      "maxLoanAmount": 35000000,
+      "assetTypes": ["INDUSTRIAL", "OFFICE", "MULTIFAMILY"],
+      "geographies": ["AZ", "TX", "CA"],
+      "maxLtv": 73,
+      "minDscr": 1.25,
+      "acceptedRecourse": ["FULL", "PARTIAL", "NON_RECOURSE"]
+    },
+    "revealedMandate": {
+      "effectiveMaxLtv": 69,
+      "effectiveMaxLoanAmount": 30000000
+    },
+    "behavior": {
+      "responseRate": 0.8,
+      "lastUpdated": "2026-11-11"
+    },
+    "hiddenPreference": {
+      "trueMaxLtv": 69,
+      "trueMaxLoanAmount": 30000000
+    }
+  },
+  {
+    "id": "L011",
+    "name": "Sunrise Property Credit",
+    "fundType": "Regional Credit Fund",
+    "statedMandate": {
+      "minLoanAmount": 3000000,
+      "maxLoanAmount": 15000000,
+      "assetTypes": ["RETAIL", "OFFICE", "MULTIFAMILY"],
+      "geographies": ["FL", "TX", "CA"],
+      "maxLtv": 65,
+      "minDscr": 1.2,
+      "acceptedRecourse": ["FULL", "PARTIAL"]
+    },
+    "revealedMandate": {
+      "effectiveMaxLtv": 61,
+      "effectiveMaxLoanAmount": 13000000
+    },
+    "behavior": {
+      "responseRate": 0.67,
+      "lastUpdated": "2026-11-08"
+    },
+    "hiddenPreference": {
+      "trueMaxLtv": 61,
+      "trueMaxLoanAmount": 13000000
+    }
+  },
+  {
+    "id": "L012",
+    "name": "HarborView Capital",
+    "fundType": "Real Estate Credit Fund",
+    "statedMandate": {
+      "minLoanAmount": 5000000,
+      "maxLoanAmount": 25000000,
+      "assetTypes": ["MULTIFAMILY", "RETAIL", "OFFICE", "INDUSTRIAL"],
+      "geographies": ["CA", "FL", "AZ", "TX"],
+      "maxLtv": 71,
+      "minDscr": 1.25,
+      "acceptedRecourse": ["FULL", "PARTIAL", "NON_RECOURSE"]
+    },
+    "revealedMandate": {
+      "effectiveMaxLtv": 66,
+      "effectiveMaxLoanAmount": 23000000
+    },
+    "behavior": {
+      "responseRate": 0.73,
+      "lastUpdated": "2026-11-10"
+    },
+    "hiddenPreference": {
+      "trueMaxLtv": 66,
+      "trueMaxLoanAmount": 23000000
+    }
+  }
+]
