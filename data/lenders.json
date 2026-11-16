@@ -6,11 +6,23 @@
     "statedMandate": {
       "minLoanAmount": 5000000,
       "maxLoanAmount": 30000000,
-      "assetTypes": ["MULTIFAMILY", "INDUSTRIAL", "OFFICE"],
-      "geographies": ["CA", "AZ", "TX"],
+      "assetTypes": [
+        "MULTIFAMILY",
+        "INDUSTRIAL",
+        "OFFICE"
+      ],
+      "geographies": [
+        "CA",
+        "AZ",
+        "TX"
+      ],
       "maxLtv": 70,
       "minDscr": 1.25,
-      "acceptedRecourse": ["FULL", "PARTIAL", "NON_RECOURSE"]
+      "acceptedRecourse": [
+        "FULL",
+        "PARTIAL",
+        "NON_RECOURSE"
+      ]
     },
     "revealedMandate": {
       "effectiveMaxLtv": 64,
@@ -32,11 +44,25 @@
     "statedMandate": {
       "minLoanAmount": 5000000,
       "maxLoanAmount": 50000000,
-      "assetTypes": ["MULTIFAMILY", "INDUSTRIAL", "OFFICE", "RETAIL"],
-      "geographies": ["CA", "AZ", "TX", "FL"],
+      "assetTypes": [
+        "MULTIFAMILY",
+        "INDUSTRIAL",
+        "OFFICE",
+        "RETAIL"
+      ],
+      "geographies": [
+        "CA",
+        "AZ",
+        "TX",
+        "FL"
+      ],
       "maxLtv": 75,
       "minDscr": 1.3,
-      "acceptedRecourse": ["FULL", "PARTIAL", "NON_RECOURSE"]
+      "acceptedRecourse": [
+        "FULL",
+        "PARTIAL",
+        "NON_RECOURSE"
+      ]
     },
     "revealedMandate": {
       "effectiveMaxLtv": 68,
@@ -58,11 +84,22 @@
     "statedMandate": {
       "minLoanAmount": 3000000,
       "maxLoanAmount": 15000000,
-      "assetTypes": ["OFFICE", "RETAIL", "MULTIFAMILY"],
-      "geographies": ["TX", "FL", "AZ"],
+      "assetTypes": [
+        "OFFICE",
+        "RETAIL",
+        "MULTIFAMILY"
+      ],
+      "geographies": [
+        "TX",
+        "FL",
+        "AZ"
+      ],
       "maxLtv": 65,
       "minDscr": 1.3,
-      "acceptedRecourse": ["FULL", "PARTIAL"]
+      "acceptedRecourse": [
+        "FULL",
+        "PARTIAL"
+      ]
     },
     "revealedMandate": {
       "effectiveMaxLtv": 62,
@@ -84,11 +121,22 @@
     "statedMandate": {
       "minLoanAmount": 8000000,
       "maxLoanAmount": 25000000,
-      "assetTypes": ["MULTIFAMILY", "OFFICE", "RETAIL"],
-      "geographies": ["CA", "TX", "FL"],
+      "assetTypes": [
+        "MULTIFAMILY",
+        "OFFICE",
+        "RETAIL"
+      ],
+      "geographies": [
+        "CA",
+        "TX",
+        "FL"
+      ],
       "maxLtv": 68,
       "minDscr": 1.2,
-      "acceptedRecourse": ["PARTIAL", "NON_RECOURSE"]
+      "acceptedRecourse": [
+        "PARTIAL",
+        "NON_RECOURSE"
+      ]
     },
     "revealedMandate": {
       "effectiveMaxLtv": 65,
@@ -104,43 +152,29 @@
     }
   },
   {
-    "id": "L005",
-    "name": "Atlas Property Finance",
-    "fundType": "Real Estate Debt Fund",
-    "statedMandate": {
-      "minLoanAmount": 2000000,
-      "maxLoanAmount": 10000000,
-      "assetTypes": ["RETAIL", "OFFICE", "INDUSTRIAL", "MULTIFAMILY"],
-      "geographies": ["FL", "AZ", "TX"],
-      "maxLtv": 65,
-      "minDscr": 1.2,
-      "acceptedRecourse": ["FULL", "PARTIAL", "NON_RECOURSE"]
-    },
-    "revealedMandate": {
-      "effectiveMaxLtv": 58,
-      "effectiveMaxLoanAmount": 9000000
-    },
-    "behavior": {
-      "responseRate": 0.65,
-      "lastUpdated": "2026-11-08"
-    },
-    "hiddenPreference": {
-      "trueMaxLtv": 58,
-      "trueMaxLoanAmount": 9000000
-    }
-  },
-  {
     "id": "L006",
     "name": "Summit Capital Partners",
     "fundType": "Private Credit Fund",
     "statedMandate": {
       "minLoanAmount": 5000000,
       "maxLoanAmount": 30000000,
-      "assetTypes": ["MULTIFAMILY", "OFFICE", "RETAIL"],
-      "geographies": ["CA", "FL", "AZ"],
+      "assetTypes": [
+        "MULTIFAMILY",
+        "OFFICE",
+        "RETAIL"
+      ],
+      "geographies": [
+        "CA",
+        "FL",
+        "AZ"
+      ],
       "maxLtv": 70,
       "minDscr": 1.25,
-      "acceptedRecourse": ["FULL", "PARTIAL", "NON_RECOURSE"]
+      "acceptedRecourse": [
+        "FULL",
+        "PARTIAL",
+        "NON_RECOURSE"
+      ]
     },
     "revealedMandate": {
       "effectiveMaxLtv": 67,
@@ -162,11 +196,22 @@
     "statedMandate": {
       "minLoanAmount": 4000000,
       "maxLoanAmount": 20000000,
-      "assetTypes": ["MULTIFAMILY", "INDUSTRIAL", "OFFICE"],
-      "geographies": ["CA", "AZ", "TX"],
+      "assetTypes": [
+        "MULTIFAMILY",
+        "INDUSTRIAL",
+        "OFFICE"
+      ],
+      "geographies": [
+        "CA",
+        "AZ",
+        "TX"
+      ],
       "maxLtv": 72,
       "minDscr": 1.25,
-      "acceptedRecourse": ["PARTIAL", "NON_RECOURSE"]
+      "acceptedRecourse": [
+        "PARTIAL",
+        "NON_RECOURSE"
+      ]
     },
     "revealedMandate": {
       "effectiveMaxLtv": 66,
@@ -188,11 +233,23 @@
     "statedMandate": {
       "minLoanAmount": 5000000,
       "maxLoanAmount": 25000000,
-      "assetTypes": ["OFFICE", "INDUSTRIAL", "RETAIL"],
-      "geographies": ["TX", "AZ", "FL"],
+      "assetTypes": [
+        "OFFICE",
+        "INDUSTRIAL",
+        "RETAIL"
+      ],
+      "geographies": [
+        "TX",
+        "AZ",
+        "FL"
+      ],
       "maxLtv": 70,
       "minDscr": 1.25,
-      "acceptedRecourse": ["FULL", "PARTIAL", "NON_RECOURSE"]
+      "acceptedRecourse": [
+        "FULL",
+        "PARTIAL",
+        "NON_RECOURSE"
+      ]
     },
     "revealedMandate": {
       "effectiveMaxLtv": 64,
@@ -214,11 +271,23 @@
     "statedMandate": {
       "minLoanAmount": 3000000,
       "maxLoanAmount": 20000000,
-      "assetTypes": ["MULTIFAMILY", "RETAIL", "OFFICE"],
-      "geographies": ["CA", "FL", "TX"],
+      "assetTypes": [
+        "MULTIFAMILY",
+        "RETAIL",
+        "OFFICE"
+      ],
+      "geographies": [
+        "CA",
+        "FL",
+        "TX"
+      ],
       "maxLtv": 68,
       "minDscr": 1.2,
-      "acceptedRecourse": ["FULL", "PARTIAL", "NON_RECOURSE"]
+      "acceptedRecourse": [
+        "FULL",
+        "PARTIAL",
+        "NON_RECOURSE"
+      ]
     },
     "revealedMandate": {
       "effectiveMaxLtv": 63,
@@ -240,11 +309,23 @@
     "statedMandate": {
       "minLoanAmount": 4000000,
       "maxLoanAmount": 35000000,
-      "assetTypes": ["INDUSTRIAL", "OFFICE", "MULTIFAMILY"],
-      "geographies": ["AZ", "TX", "CA"],
+      "assetTypes": [
+        "INDUSTRIAL",
+        "OFFICE",
+        "MULTIFAMILY"
+      ],
+      "geographies": [
+        "AZ",
+        "TX",
+        "CA"
+      ],
       "maxLtv": 73,
       "minDscr": 1.25,
-      "acceptedRecourse": ["FULL", "PARTIAL", "NON_RECOURSE"]
+      "acceptedRecourse": [
+        "FULL",
+        "PARTIAL",
+        "NON_RECOURSE"
+      ]
     },
     "revealedMandate": {
       "effectiveMaxLtv": 69,
@@ -260,43 +341,31 @@
     }
   },
   {
-    "id": "L011",
-    "name": "Sunrise Property Credit",
-    "fundType": "Regional Credit Fund",
-    "statedMandate": {
-      "minLoanAmount": 3000000,
-      "maxLoanAmount": 15000000,
-      "assetTypes": ["RETAIL", "OFFICE", "MULTIFAMILY"],
-      "geographies": ["FL", "TX", "CA"],
-      "maxLtv": 65,
-      "minDscr": 1.2,
-      "acceptedRecourse": ["FULL", "PARTIAL"]
-    },
-    "revealedMandate": {
-      "effectiveMaxLtv": 61,
-      "effectiveMaxLoanAmount": 13000000
-    },
-    "behavior": {
-      "responseRate": 0.67,
-      "lastUpdated": "2026-11-08"
-    },
-    "hiddenPreference": {
-      "trueMaxLtv": 61,
-      "trueMaxLoanAmount": 13000000
-    }
-  },
-  {
     "id": "L012",
     "name": "HarborView Capital",
     "fundType": "Real Estate Credit Fund",
     "statedMandate": {
       "minLoanAmount": 5000000,
       "maxLoanAmount": 25000000,
-      "assetTypes": ["MULTIFAMILY", "RETAIL", "OFFICE", "INDUSTRIAL"],
-      "geographies": ["CA", "FL", "AZ", "TX"],
+      "assetTypes": [
+        "MULTIFAMILY",
+        "RETAIL",
+        "OFFICE",
+        "INDUSTRIAL"
+      ],
+      "geographies": [
+        "CA",
+        "FL",
+        "AZ",
+        "TX"
+      ],
       "maxLtv": 71,
       "minDscr": 1.25,
-      "acceptedRecourse": ["FULL", "PARTIAL", "NON_RECOURSE"]
+      "acceptedRecourse": [
+        "FULL",
+        "PARTIAL",
+        "NON_RECOURSE"
+      ]
     },
     "revealedMandate": {
       "effectiveMaxLtv": 66,
