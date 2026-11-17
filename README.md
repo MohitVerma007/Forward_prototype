@@ -1,4 +1,4 @@
-```markdown
+
 # Private Credit Matching & Feedback Loop Prototype
 
 A synthetic prototype testing how credit fund responses (`QUOTE` or `PASS`) can be used as behavioral learning signals to improve future deal routing[cite: 1]. 
@@ -131,7 +131,5 @@ The prototype evaluates **Static Mandate Matching** vs. **Feedback-Aware Matchin
 ## Author
 
 **Mohit Verma** · Backend AI Engineer
-
-```
 
 ```
